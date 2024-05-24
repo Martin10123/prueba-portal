@@ -1,9 +1,17 @@
+import { BrowserRouter } from "react-router-dom";
+import { AuthUserProvider } from "./context/AuthUser";
+import { AppRouter } from "./routers/AppRouter";
+
 function App() {
   return (
     <>
-    <h1>hola mundo</h1>
+      <BrowserRouter>
+        <AuthUserProvider>
+          <AppRouter />
+        </AuthUserProvider>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

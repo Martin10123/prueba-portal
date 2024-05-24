@@ -1,0 +1,93 @@
+.login_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_container::before {
+  content: "";
+  background-image: url("../images/loginImg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.login_content {
+  width: 50%;
+  height: 60%;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 6px gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login_img {
+  width: 100%;
+  height: 100%;
+}
+
+.login_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login_contain_form {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login_contain_form h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.login_formulario {
+  width: 100%;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.login_contain_input {
+  width: 100%;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.login_label_form {
+}
+
+.login_input_form {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.login_btn {
+  width: 100%;
+  height: 3rem;
+  background: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
